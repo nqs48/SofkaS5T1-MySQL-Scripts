@@ -180,8 +180,8 @@ SELECT * FROM sale;
 -- Logical Delete of sales registers made
 -- -----------------------------------------------------
 
-UPDATE sale SET status = 'D' WHERE sale_id = 2;
-UPDATE sale SET status = 'D' WHERE sale_id = 4;
+UPDATE sale SET status = "D" WHERE sale_id = 2;
+UPDATE sale SET status = "D" WHERE sale_id = 4;
 
 SELECT * FROM sale WHERE status = 'A';
 
@@ -190,9 +190,9 @@ SELECT * FROM sale WHERE status = 'A';
 -- 4. Updated three products in your name and the supplier that supplies them.
 -- -----------------------------------------------------------------------------------
 
-UPDATE product SET name = 'pepsi', price = 5500, supplier_sup_id = 1 WHERE (prod_id = 2);
-UPDATE product SET name = 'Monster', price = 6500, supplier_sup_id = 5 WHERE (prod_id = 1);
-UPDATE product SET name = 'apple', price = 2500, supplier_sup_id = 3 WHERE (prod_id = 3);
+UPDATE product SET name = "pepsi", price = 5500, supplier_sup_id = 1 WHERE (prod_id = 2);
+UPDATE product SET name = "Monster", price = 6500, supplier_sup_id = 5 WHERE (prod_id = 1);
+UPDATE product SET name = "apple", price = 2500, supplier_sup_id = 3 WHERE (prod_id = 3);
 
 
 SELECT * FROM product;

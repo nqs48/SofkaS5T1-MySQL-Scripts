@@ -9,5 +9,5 @@ SELECT sale_id,cus_document,product_prod_id FROM invoice INNER JOIN sale ON inv_
 -- 2. Consult products by name, which must show who or who have been their suppliers.
 -- -----------------------------------------------------------------------------------
 
-SELECT name, supplier_sup_id FROM product WHERE name = 'Monster' ;
-SELECT name, supplier_sup_id FROM product WHERE name = 'apple' ;
+SELECT name, supplier_sup_id FROM product WHERE name = "Monster";
+SELECT name, supplier_sup_id FROM product WHERE name = "apple";
